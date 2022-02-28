@@ -6,25 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title></title>
+    <title>convert</title>
     
 </head>
 <body>
-    <header class="header">
+    <header class="header bg-info">
         <div class="container">
-         
-           </div>
+            <form class="row convert__form my-4" action="https://echo.htmlacademy.ru/" method="GET">
+                <div class="col-5">
+                    <input class=" convert__input form-control" type="number"  placeholder=" Amount money" min="0" step="0.1" >
+                </div>
+                <div class="col-5">  
+                    
+                    <select class="convert__select form-select " aria-label="Default select example" required>
+                        <option selected disabled hidden>Currencies</option>
+                        <option value="USD">USD</option>
+                        <option value="RUB">RUB</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
+              <div class="col-2 ">
+                <button class="col-2 btn btn-success w-100" type="submit" >Success</button>
+              </div>
+            </form>
+            <h2 class=" convert__result text-center">result</h2>
         </div>
-    </header>
+    </div>
+</header>
 
-     <main>
-        
-    </main> 
+<main>
     
-    <footer class="footer">
-       
-    </footer> 
+</main> 
+
+<footer class="footer">
+    
+</footer> 
 <script src="./js/bootstrap.js"></script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
